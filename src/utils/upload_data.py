@@ -1,5 +1,4 @@
 #huggingface-cli login
-#api key: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
 from huggingface_hub import HfApi
 api = HfApi()
 # api.create_repo(repo_id="thyroid", private=True)
