@@ -1,0 +1,14 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /root/thyroid/llama3.2
+adapter_name_or_path: /root/thyroid/model/llama3.2
+template: mllama
+finetuning_type: lora
+trust_remote_code: true
+
+### export
+export_dir: /root/thyroid/model/llama3.2_lora_merged
+export_size: 2
+export_device: cpu
+export_legacy_format: false
